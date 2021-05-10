@@ -51,7 +51,10 @@
 <nav>
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">inicio</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">sobre esto</a></li>
+		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">Quienes somos</a></li>
+		<li><a aria-current="{segment === 'help' ? 'page' : undefined}" href="help">Ayuda</a></li>
+		<li><a aria-current="{segment === 'contact' ? 'page' : undefined}" href="contact">Contactar</a></li>
+		<li><a aria-current="{segment === 'Login' ? 'page' : undefined}" href="Login">LOGUEARSE</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->

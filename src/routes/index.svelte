@@ -1,5 +1,6 @@
 <script>
 	import sadmonkey from 'images/GDvx3tBT_400x400.jpg';
+	import Cartelera
 </script>
 
 <style>
@@ -40,11 +41,4 @@
 	<title>Sapper project template</title>
 </svelte:head>
 
-<h1>me hace re mal esto </h1>
 
-<figure>
-	<img alt="mono triste" src="{sadmonkey}">
-	<figcaption>esto se cae a pedazos</figcaption>
-</figure>
-
-<p><strong>jamon crudo</strong></p>
