@@ -3,11 +3,12 @@
     import CustomButton from '../components/CustomButton.svelte';
     import Socialicon from '../components/Socialicon.svelte';
     import Searchconteiner from './Seachcontainer.svelte';
+    import { goto } from '@sapper/app';
     
     
     function clickbutton() {
       
-        
+        goto('Login');
     }	
     </script>
     
