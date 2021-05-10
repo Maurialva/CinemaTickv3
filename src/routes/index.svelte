@@ -1,6 +1,11 @@
 <script>
 	import sadmonkey from 'images/GDvx3tBT_400x400.jpg';
-	import Cartelera
+	import Cartelera from '../components/Cartelera.svelte';
+	import Customtextinput from '../components/Customtextinput.svelte';
+    import CustomButton from '../components/CustomButton.svelte';
+	import Customfigure from '../components/Customfigure.svelte';
+
+
 </script>
 
 <style>
@@ -38,7 +43,28 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Inicio</title>
 </svelte:head>
 
+<table>
+	<tr>
+		<td colspan="4">
+			<Cartelera/>
+		</td>
+		<td>
+
+			<div id="suscripcion">
+				<h1>Suscribirse</h1>
+				<Customtextinput texto="EMAIL..." txnom="suscripcion"/>
+				<CustomButton class="suscripcion" on:click={clickbutton()}>
+					SUSCRIBIRSE
+				</CustomButton>
+			</div>
+			<div id="destacada">
+				<h2>destacada</h2>
+				<Customfigure figname="TITULO"/>
+			</div>
+		</td>
+	</tr>
+</table>
 

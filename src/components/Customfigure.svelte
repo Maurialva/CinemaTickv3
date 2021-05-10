@@ -4,7 +4,7 @@
     
     
     <figure >
-    <a href="https://www.instagram.com/"> <img class="fig" src="p_sample.jpg" alt="Instagram" height="" width="100%"></a>
+    <a href="about"> <img class="fig" src="p_sample.jpg" alt="Instagram" height="" width="100%"></a>
     <figcaption><h3>{figname}</h3></figcaption>
     </figure>
     
