@@ -50,7 +50,7 @@
 
 <nav>
 	<ul>
-		<li><a aria-current="{segment === 'index' ? 'page' : undefined}" href=".">inicio</a></li>
+		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">inicio</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">Quienes somos</a></li>
 		<li><a aria-current="{segment === 'help' ? 'page' : undefined}" href="help">Ayuda</a></li>
 		<li><a aria-current="{segment === 'contact' ? 'page' : undefined}" href="contact">Contactar</a></li>

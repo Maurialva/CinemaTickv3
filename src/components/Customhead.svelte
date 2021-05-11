@@ -17,7 +17,7 @@
     <table>
         <tbody>
         <tr>
-        <td> <img  src='logocinematickv2.png' alt="logo" class="logo"  width="70%"  ></td>
+        <td> <img  src='logocinematickv2.png' alt="logo" class="logo"  width="110%"  ></td>
         
         <td> <div align="right"><Socialicon nombre={"Instagram"}/> 
             <Socialicon nombre={"Facebook"}/> 

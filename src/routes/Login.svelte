@@ -1,9 +1,15 @@
 <script>
     import Customtextinput from '../components/Customtextinput.svelte';
     import CustomButton from '../components/CustomButton.svelte';
+    import { goto } from '@sapper/app';
     
-    function clickbutton() {
-        
+    function clickbutton(n) {
+        switch(n)
+        {
+            case"r": goto('register');break;
+            case"l": goto('help');break;
+        }
+
     }	
     </script>
     <center>
@@ -34,7 +40,7 @@
                 <tr>
                 <td><img src="filler.png" alt="filler"></td>
                 <td>
-                    <CustomButton class="enter" on:click={()=>clickbutton()} >
+                    <CustomButton class="enter" on:click={()=>clickbutton("l")} >
                      INGRESAR
                     </CustomButton> </td>
                 <td><img src="filler.png" alt="filler"></td>
@@ -42,7 +48,7 @@
                
                 <tr>
                 <td><img src="filler.png" alt="filler"></td>
-                <td><CustomButton class="register" on:click={()=>clickbutton()} >
+                <td><CustomButton class="register" on:click={()=>clickbutton("r")} >
                             REGISTRARSE
                         </CustomButton></td>
                 <td><img src="filler.png" alt="filler"></td>

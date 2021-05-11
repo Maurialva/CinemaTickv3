@@ -3,7 +3,8 @@
 import Nav from '../components/Nav.svelte';
 import Customfooter from '../components/Customfooter.svelte';
 
-	export let segment;
+
+/*	export let segment;*/
 </script>
 
 
@@ -12,27 +13,53 @@ import Customfooter from '../components/Customfooter.svelte';
 
 <main>
 	<Customhead/>
+	
 	<slot></slot>
 
 	<Customfooter/>
-<!--
-	<Nav {segment}/>-->
+
+	<!--<Nav {segment}/>-->
 </main>
 </body>
 
 <style>
 	main {
+		/*	
+	
+		
+		*/
+		text-align: center;
+		border-radius: 50px;
 		position: relative;
-		max-width: 56em;
-		background-color: lightgray;
+		max-width: 80%;
+		box-sizing: border-box;
+		background-color: 
+		lightgray;
 		padding: 2em;
 		margin: 0 auto;
-		box-sizing: border-box;
-		border-radius: 50px;
 	}
 	body
 	{
-background-color: #449fad;
+		background-color: #449fad;
 
+	}
+	:global(h1){
+		color: #449fad;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-family: 'Tahoma', cursive;
+		text-align: center;
+		font-size: 200%;
+		font-weight: 1;
+		text-shadow:0px 5px 10px rgba(41, 39, 39, 0.76) ;
+	}
+	:global(h2){
+		color: #ffffff;
+		text-transform: uppercase;
+		font-family: 'Tahoma', cursive;
+		text-align: center;
+		font-size: 120%;	
+		text-shadow:0px 5px 10px rgba(41, 39, 39, 0.76) ;
+		font-weight: 1;
 	}
 </style>
