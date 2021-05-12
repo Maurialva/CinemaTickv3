@@ -5,8 +5,9 @@
     import CustomButton from '../components/CustomButton.svelte';
 	import Customfigure from '../components/Customfigure.svelte';
 	import Grid from '../components/Grid.svelte';
+	import { goto } from '@sapper/app';
 	function handleClick() {
-		alert('Te has suscripto a las noticias');
+		alert('te acabas de suscribir crack');
 	}
 
 </script>

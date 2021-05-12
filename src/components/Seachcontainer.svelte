@@ -3,7 +3,7 @@
     </script>
     
     <br>
-                        <form action="http://localhost:5000/">
+                        <form action="busqueda">
                             
                         <input type="text" placeholder="BUSCAR..." name="searchbar"  >
                         <Searchicon/>

@@ -7,7 +7,8 @@
         switch(n)
         {
             case"r": goto('register');break;
-            case"l": goto('help');break;
+            case"l": alert('Haz iniciado sesion');break;
+
         }
 
     }	
@@ -32,8 +33,8 @@
                 <td><img src="filler.png" alt="filler"></td>
                 <td>
                     <h2>ingrese su contraseña</h2>
-                    <input type="password"  id="pwd" name="pwd"><br>
-                    <a href="localhost/5000"  style="font-size: 150%; color:#449fad " >olvido su contraseña?</a>
+                    <input type="password" placeholder="CONTRASEÑA" id="pwd" name="pwd"><br>
+                    <a href="help"  style="font-size: 150%; color:#449fad " >olvido su contraseña?</a>
                 </td>
                 <td><img src="filler.png" alt="filler"></td>
                 </tr>
