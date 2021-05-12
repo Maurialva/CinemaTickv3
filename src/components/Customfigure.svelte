@@ -12,7 +12,7 @@
     
     .fig:hover
     {
-        width:110%;
+        width:120%;
         background-position: 100%;
             background-size: 200%;
            border: 3px solid #449fad;
