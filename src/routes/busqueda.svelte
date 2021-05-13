@@ -5,13 +5,13 @@ import Sidemenu from "../components/Sidemenu.svelte";
 
 <grid> 
 
-    <div class="grid-container2">
-        <div class="sidemenu">
+    <div id="grid-container2">
+        <div id="sidemenu">
             <br>
            
             <Sidemenu/>
         </div>
-        <div class="cartelera">
+        <div id="cartelera">
            <Searchresults/>
         </div>
     </div>
@@ -20,10 +20,10 @@ import Sidemenu from "../components/Sidemenu.svelte";
 <style>
 
  
-  .sidemenu { grid-area: m1; }
-  .cartelera { grid-area: m2; }
+#sidemenu { grid-area: m1; }
+#cartelera { grid-area: m2; }
 
-  .grid-container2 {
+#grid-container2 {
     display: grid;
     grid-template-areas:
       'm1 m2 m2 m2'  
@@ -33,7 +33,7 @@ import Sidemenu from "../components/Sidemenu.svelte";
       'm1 m2 m2 m2';
   }
   
-  .grid-container2 > div {
+  #grid-container2 > div {
       background-color:none;
     text-align: center;
     padding: none;

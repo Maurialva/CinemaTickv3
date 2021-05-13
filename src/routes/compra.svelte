@@ -68,11 +68,11 @@
                 </td>
                 <td>
                     
-                    <div class="dropdown">
-                   <CustomButton class="dropbtn" on:click={()=>clickbutton()} >
+                    <div id="dropdown">
+                   <CustomButton id="dropbtn" on:click={()=>clickbutton()} >
                         CUOTAS
                     </CustomButton>
-                    <div class="dropdown-content">
+                    <div id="dropdown-content">
                     <a href=".">1 cuota de tanto</a>
                     <a href=".">3 cuotas de tanto</a>
                     <a href=".">6 cuotas de tanto</a>
@@ -82,7 +82,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <CustomButton class="pago" on:click={()=>clickbutton()} >
+                    <CustomButton id="pago" on:click={()=>clickbutton()} >
                         EFECTUAR PAGO
                     </CustomButton>
                 </td>
@@ -101,12 +101,12 @@ table
     text-align: center;
 }
 
-.dropdown {
+#dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+#dropdown-content {
   display: none;
   position: absolute;
   background-color: #0d494b70;
@@ -115,16 +115,16 @@ table
   z-index: 1;
 }
 
-.dropdown-content a {
+#dropdown-content a {
   color: rgb(255, 255, 255);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #1c5068}
+#dropdown-content a:hover {background-color: #1c5068}
 
-.dropdown:hover .dropdown-content {
+#dropdown:hover #dropdown-content {
   display: block;
 }
 

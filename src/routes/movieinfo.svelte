@@ -17,18 +17,18 @@ function clickbutton(n)
 
 <grid> 
 
-    <div class="grid-container2">
-        <div class="title">
+    <div id="grid-container2">
+        <div id="title">
             <br>
             <h1>Titulo de la pelicula</h1>
         </div>
-        <div class="poster">
+        <div id="poster">
             <img src="./p_mortalk.jpg" alt="poster">
         </div>
-        <div class="info"><br>
+        <div id="info"><br>
             <Dropdown nombre="CINE"/> <br> <br>
             <Dropdown nombre="FUNCION"/><br><br>
-            <CustomButton class="suscripcion" on:click={()=>clickbutton("1")}>
+            <CustomButton id="suscripcion" on:click={()=>clickbutton("1")}>
 				SELECCIONAR BUTACAS
 			</CustomButton><br><br>
             <h2>
@@ -37,13 +37,13 @@ function clickbutton(n)
                 GENERO:</h2><h3> ACCION - FANTASIA - CIENCIA FICCION </h3>
 
         </div>
-        <div class="descrip">
+        <div id="descrip">
         <h2>   Mortal Kombat es una película de fantasía oscura de artes marciales y gore estadounidense de 2021 dirigida por Simon McQuoid, en su debut como director, a partir de un guion de Greg Russo y Dave Callaham y una historia de Oren Uziel y Russo.3​ Se basa en la franquicia de videojuegos del mismo nombre creada por Ed Boon y John Tobias, que sirve como reinicio de la serie de películas Mortal Kombat. La película está protagonizada por Lewis Tan, Jessica McNamee, Josh Lawson, Tadanobu Asano, Mehcad Brooks, Ludi Lin, Chin Han, Joe Taslim e Hiroyuki Sanada. 
     </h2> </div>
-        <div class="pay">
+        <div id="pay">
             <br>
 
-            <CustomButton class="suscripcion" on:click={()=>clickbutton("2")}>
+            <CustomButton id="suscripcion" on:click={()=>clickbutton("2")}>
 				PROCEDER A PAGAR
 			</CustomButton> <br><br>
         </div>
@@ -53,13 +53,13 @@ function clickbutton(n)
 
 <style>
 
- .title{ grid-area: m0; }
-  .poster { grid-area: m1; }
-  .info { grid-area: m2; }
-  .descrip { grid-area: m3; }
-  .pay { grid-area: m4; }
+ #title{ grid-area: m0; }
+ #poster { grid-area: m1; }
+ #info { grid-area: m2; }
+ #descrip { grid-area: m3; }
+ #pay { grid-area: m4; }
 
-  .grid-container2 {
+ #grid-container2 {
     display: grid;
     grid-template-areas:
       'm0 m0 m0 m0'  
@@ -69,18 +69,13 @@ function clickbutton(n)
       'm4 m4 m4 m4';
   }
   
-  .grid-container2 > div {
+  #grid-container2 > div {
       background-color:none;
     text-align: center;
     padding: none;
     border-radius: 50px; 
     border:none;
   }
-    img
-    {
-    width: 70%;
-    }
-  
 
 
 

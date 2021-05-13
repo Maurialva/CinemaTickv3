@@ -4,52 +4,52 @@
 
 <grid> 
 
-<div class="grid-container2">
-	<div class="title">
+<div id="grid-container2">
+	<div id="title">
 		<h1>Cartelera</h1>
 	</div>
-    <div class="movie1">
+    <div id="movie1">
         <Customfigure figname="TITULO"/>
     </div>
-    <div class="movie2">
+    <div id="movie2">
         <Customfigure figname="TITULO"/>
     </div>
-    <div class="movie3">
+    <div id="movie3">
         <Customfigure figname="TITULO"/>
     </div>
-    <div class="movie4">
+    <div id="movie4">
         <Customfigure figname="TITULO"/>
     </div>
-    <div class="movie5">
+    <div id="movie5">
         <Customfigure figname="TITULO"/>
     </div>
-    <div class="movie6">
+    <div id="movie6">
         <Customfigure figname="TITULO"/>
     </div>
-    <div class="movie7">
+    <div id="movie7">
         <Customfigure figname="TITULO"/>
     </div>
-    <div class="movie8">
+    <div id="movie8">
         <Customfigure figname="TITULO"/>
     </div>
-    <div class="movie9">
+    <div id="movie9">
         <Customfigure figname="TITULO"/>
     </div>
 </div>
 </grid>
 <style>
- .title{ grid-area: m0; }
-  .movie1 { grid-area: m1; }
-  .movie2 { grid-area: m2; }
-  .movie3 { grid-area: m3; }
-  .movie4 { grid-area: m4; }
-  .movie5 { grid-area: m5; }
-  .movie6 { grid-area: m6; }
-  .movie7 { grid-area: m7; }
-  .movie8 { grid-area: m8; }
-  .movie9 { grid-area: m9; }
+ #title{ grid-area: m0; }
+ #movie1 { grid-area: m1; }
+ #movie2 { grid-area: m2; }
+ #movie3 { grid-area: m3; }
+ #movie4 { grid-area: m4; }
+ #movie5 { grid-area: m5; }
+ #movie6 { grid-area: m6; }
+ #movie7 { grid-area: m7; }
+ #movie8 { grid-area: m8; }
+ #movie9 { grid-area: m9; }
   
-  .grid-container2 {
+ #grid-container2 {
     display: grid;
     grid-template-areas:
       'm0 m0 m0'  
@@ -58,7 +58,7 @@
       'm7 m8 m9';
   }
   
-  .grid-container2 > div {
+  #grid-container2 > div {
       background-color:none;
     text-align: center;
     padding: none;

@@ -9,9 +9,7 @@ import Customfooter from '../components/Customfooter.svelte';
 
 
 <body>
-	
-
-<main>
+<main >
 	<Customhead/>
 	
 	<slot></slot>
@@ -62,4 +60,6 @@ import Customfooter from '../components/Customfooter.svelte';
 		text-shadow:0px 5px 10px rgba(41, 39, 39, 0.76) ;
 		font-weight: 1;
 	}
+
+	
 </style>

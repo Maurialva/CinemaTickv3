@@ -5,11 +5,11 @@
 </script>
 
   <center>
-<div class="dropdown">
-    <CustomButton class="dropdown" on:click={()=>clickbutton()} >
+<div id="dropdown">
+    <CustomButton id="dropdown" on:click={()=>clickbutton()} >
          {nombre}
      </CustomButton>
-     <div class="dropdown-content">
+     <div id="dropdown-content">
      <a href=".">primera opcion</a>
      <a href=".">segunda opcion</a>
      <a href=".">tercera opcion</a>
@@ -18,12 +18,12 @@
     </center>
 <style>
    
-.dropdown  {
+   #dropdown  {
  
   width: 50%;
 }
 
-.dropdown-content {
+#dropdown-content {
   display: none;
   position: absolute;
   background-color: #0d494b70;
@@ -32,18 +32,18 @@
   z-index: 1;
 }
 
-.dropdown-content a {
+#dropdown-content a {
   color: #2b656e;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #1c5068;
+#dropdown-content a:hover {background-color: #1c5068;
     border-radius: 50px;color: white;
     }
 
-.dropdown:hover .dropdown-content {
+#dropdown:hover #dropdown-content {
   display: block;background-color: lightgray;border: 1px solid #449fad; 
   border-radius: 50px;
 }

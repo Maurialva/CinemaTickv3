@@ -12,7 +12,7 @@
             <tr>
                 <td colspan="2">
                     <h1>ingrese sus datos </h1>
-                    <hr style="color: #449fad; width: 100%;">
+                    <hr >
                 </td>
             </tr>
             <tr>
@@ -38,7 +38,7 @@
             </tr>
             <tr>
             <td><Customtextinput texto="DNI" txnom="r_dni"/></td>
-            <td> <h3> <input type="checkbox" style=" transform: scale(1.5);">
+            <td> <h3> <input type="checkbox">
                 &nbsp; &nbsp;Aceptar condiciones</h3>
             </td>
             </tr>
@@ -48,12 +48,12 @@
             </tr>
             <tr>
             <td><Customtextinput texto="NUM. TARJETA (OPCIONAL)" txnom="r_tarjeta"/></td>
-            <td><CustomButton class="r_register" on:click={()=>clickbutton()} >
+            <td><CustomButton id="r_register" on:click={()=>clickbutton()} >
                 REGISTRARSE
             </CustomButton></td>
             </tr>
             <tr>
-            <td colspan="2"> <hr style="color: #449fad; width: 100%;"></td>
+            <td colspan="2"> <hr></td>
             </tr>
             <tr rowspan="3">
                 <td colspan="2">
@@ -74,26 +74,5 @@
     
     
     <style>
-        
-table
-{
-    text-align: center;
-}
-
-
-   
-input:focus {  border-image: #000000; 
-outline: none;
-background-position: 0;
-transition: background 900ms ease-in-out;
-background-image: linear-gradient(43deg,rgb(27, 32, 83) 0%, rgb(33, 214, 199) 56%, rgb(4, 25, 39) 100%); 
-}
-input:hover{
-    background-position: 0;
-    transition: background 900ms ease-in-out;
-    background-image:  linear-gradient(43deg,rgb(27, 32, 83) 0%, rgb(33, 214, 199) 56%, rgb(4, 25, 39) 100%); 
-}
-
-
-
+    
     </style>

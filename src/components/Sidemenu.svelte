@@ -47,22 +47,22 @@
 
 </script>
 <h1> Seleccionar filtro </h1>
-<hr style="color: #449fad; width: 100%;">
+<hr>
 {#each sections as section}
-<div class="accordion">
-        <CustomButton class="ayuda" on:click={() => expand(section)} >
+<div id="accordion">
+        <CustomButton id="ayuda" on:click={() => expand(section)} >
             {section.title}
         </CustomButton>
 	{#if section.active}
-		<div class="slider" transition:slide>
+		<div id="slider" transition:slide>
             <h3>
-			<p><br><CustomButton class="dropdown" on:click={()=>clickbutton()} >
+			<p><br><CustomButton id="dropdown" on:click={()=>clickbutton()} >
         Opcion 1
     </CustomButton>
-    <CustomButton class="dropdown" on:click={()=>clickbutton()} >
+    <CustomButton id="dropdown" on:click={()=>clickbutton()} >
       Opcion 2
   </CustomButton>
-  <CustomButton class="dropdown" on:click={()=>clickbutton()} >
+  <CustomButton id="dropdown" on:click={()=>clickbutton()} >
     Opcion 3
 </CustomButton>
         
@@ -73,20 +73,6 @@
 {/each}
 
 <style>
-	.accordion {
-		margin-bottom: 1%;
-       
-	}
-	.slider {
-	
-		background-color: #449fad;
-		color: white;
-        border-radius: 50px;
-	}
 
-    h3
-    {
-        color: white;
-    }
 </style>
 

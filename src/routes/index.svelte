@@ -24,16 +24,16 @@
 </svelte:head>
 
 <Grid pagenumber="1" />
-<div class="grid-container">
-	<div class="menuleft">
+<div id="grid-container">
+	<div id="menuleft">
 			<Cartelera/>
 	</div>
-	<div class="menucenter">
+	<div id="menucenter">
 		<div id="suscripcion">
 			<h1>Suscribirse</h1>
 		<Customtextinput texto="EMAIL..." txnom="suscripcion"/>
 		<br>
-			<CustomButton class="suscripcion" on:click={handleClick}>
+			<CustomButton id="suscripcion" on:click={handleClick}>
 				SUSCRIBIRSE
 			</CustomButton>
 				</div>
