@@ -1,49 +1,47 @@
+
 <script>
 
     import CustomButton from '../components/CustomButton.svelte';
     import Socialicon from '../components/Socialicon.svelte';
     import Searchconteiner from './Seachcontainer.svelte';
     import { goto } from '@sapper/app';
-    
+    import Searchicon from './Searchicon.svelte';
+import { svg_element } from 'svelte/internal';
     
     function clickbutton() {
       
         goto('Login');
     }	
     </script>
+
+
+<header class="w-full bg-gradient-to-r border-b-8 border-opacity-50 border-blue-200 border-solid from-blue-400 via-blue-500 to-indigo-800   transition ease-in duration-700 md:bg-gradient-to-r " >
+    <div class="flex flex-wrap justify-center">
+        <div class="w-1/6  my-5 mr-40 drop-shadow">
+            <img id="img" class="w-4/5" src='logocinematickv12.png' alt="logo" >
+        </div>
+        <div class="w-4/6">
+            <h1 class="p-5 text-blue-600 text-3xl uppercase my-5">
+              <Searchconteiner/>                
+            </h1>
+        </div>
+        <div class="w-1/6 flex justify-end absolute text-blue-400 top-20 right-3 hover:-translate-y-1 hover:scale-110">
+          
+            <div><a class="py-2  text-blue-200 fill-current "href="https://www.instagram.com/explore/tags/jamon/"> <img src="/instagram2.png" alt="instagram"></a>&nbsp;
+            </div> <div><a class="py-2" href="https://www.facebook.com/groups/jamonserrano"> <img src="/facebook2.png" alt="facebook"></a>&nbsp;
+          </div><div><a class="py-2" href="https://twitter.com/search?q=%23jamon&src=typed_query"> <img src="twitter2.png" alt="twitter"></a>&nbsp;
+        </div>
+        <div>
+
+          <button class="py-4 hover:-translate-y-1  align-middle transition ease-in duration-400  hover:scale-110 bg-blue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xl px-10 rounded-full shadow  hover:bg-indigo-600 hover:text-blue-200 outline-none focus:outline-none mr-1 mb-1 " type="button">
+            LOGIN
+          </button></div>
+        </div>
+
+
+    </div>
+
+ </header >
     
-    
-    
-    <table >
-        <tbody>
-        <tr>
-        <td> <img id="img" src='logocinematickv2.png' alt="logo" class="logo"  ></td>
-        
-        <td> <div align="right"><Socialicon nombre={"Instagram"}/> 
-            <Socialicon nombre={"Facebook"}/> 
-            <Socialicon nombre={"Twitter"}/> 
-            <CustomButton id="login" on:click={()=>clickbutton()} >
-                LOGIN
-            </CustomButton>
-             </div>
-             <h2>el mejor cine a un click de distancia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;
-                
-             </h2> </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <div id="search-container">
-            
-                <Searchconteiner/>
-            </div>
-            </td>
-        </tr>
-        </tbody>
-        </table>
-    
-    <style>
-   
-    </style>
+ 
+          

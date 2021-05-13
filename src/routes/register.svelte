@@ -6,6 +6,9 @@
         
     }	
     </script>
+    <svelte:head>
+        <title>CinemaTick - Registrarse</title>
+    </svelte:head>
     <center>
         <table>
         <tbody>

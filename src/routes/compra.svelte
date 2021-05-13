@@ -6,6 +6,9 @@
         
     }	
     </script>
+    <svelte:head>
+        <title>CinemaTick - Finalizar Compra</title>
+    </svelte:head>
     <center>
         <table>
         <tbody>

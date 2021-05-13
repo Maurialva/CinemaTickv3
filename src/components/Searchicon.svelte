@@ -4,7 +4,7 @@
     
  </script>
  
- <input type="image" src="icon_search1.png" alt="Submit"  />
+ <input type="image" src="icon_search2.png" alt="Submit" class="text-right float-right right-10 pb-8 scale-125"  />
  
  <style>
  

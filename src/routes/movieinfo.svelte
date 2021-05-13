@@ -14,7 +14,9 @@ function clickbutton(n)
 }
 
 </script>
-
+<svelte:head>
+	<title>CinemaTick - Pelicula</title>
+</svelte:head>
 <grid> 
 
     <div id="grid-container2">

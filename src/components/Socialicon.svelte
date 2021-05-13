@@ -25,7 +25,7 @@
     }
     
 </script>
-<a  href={dir}> <img  id= "socialicon"  src={scr} alt={nombre}></a>
+<a class="w-full" href={dir}> <img  id= "socialicon"  src={scr} alt={nombre}></a>
 
 <style>
   

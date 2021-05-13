@@ -2,7 +2,7 @@
 
 <script>
 	let buttonProps = {
-	id:[$$restProps.class]
+	id:[$$restProps.id]
 	}
 </script>
 	<button on:click
@@ -16,3 +16,8 @@
 <style>
 	
 </style>
+
+
+
+  
+  

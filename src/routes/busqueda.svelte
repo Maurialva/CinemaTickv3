@@ -2,7 +2,9 @@
 import Searchresults from "../components/Searchresults.svelte";
 import Sidemenu from "../components/Sidemenu.svelte";
 </script>
-
+<svelte:head>
+	<title>CinemaTick - Busqueda</title>
+</svelte:head>
 <grid> 
 
     <div id="grid-container2">

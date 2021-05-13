@@ -17,20 +17,6 @@
           display: grid;
           grid-template-areas:
             'menu menu menu menu menu main';
-            grid-gap: 1%;
-          background-color:#449fad;
-          padding: 1%;
-          border-radius: 50px; 
-        }
-        
-        #grid-container > div {
-          background-color:lightgray;
-          text-align: center;
-          padding: 1%;
-          border-radius: 50px; 
-          border-color: aqua;
-          
-          
         }
         </style>
     

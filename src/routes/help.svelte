@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Ayuda</title>
+	<title>CinemaTick - Ayuda</title>
 </svelte:head>
 
 <script>
@@ -43,6 +43,8 @@
 		})
 	}
 </script>
+
+
 <h1>preguntas frecuentes </h1>
 <hr style="color: #449fad; width: 100%;">
 {#each sections as section}

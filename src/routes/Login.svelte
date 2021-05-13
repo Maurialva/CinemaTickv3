@@ -13,13 +13,16 @@
 
     }	
     </script>
+    <svelte:head>
+        <title>CinemaTick - Inicio de Sesion</title>
+    </svelte:head>
     <center>
         <table>
             <tbody>
             <tr>
           
             <td><h1>inicio de sesion de cinematick</h1>
-            <hr style="color: #449fad; width: 100%;"></td>
+            <hr ></td>
            
             </tr>
             <tr>
@@ -34,7 +37,7 @@
                 <td>
                     <h2>ingrese su contraseña</h2>
                     <input type="password" placeholder="CONTRASEÑA" id="pwd" name="pwd"><br>
-                    <a href="help"  style="font-size: 150%; color:#449fad " >olvido su contraseña?</a>
+                    <a href="help"  >olvido su contraseña?</a>
                 </td>
                 
                 </tr>
