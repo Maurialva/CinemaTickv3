@@ -5,7 +5,7 @@ import Dropbutton from './Dropbutton.svelte';
     </script>
     
     
-    <div class="w-9/12 rounded-full border-solid pl-10 bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-800 hover:from-indigo-400 via-indigo-500 to-blue-800 transition ease-in duration-700 ">       
+    <div class="w-full sm:w-9/12 rounded-full border-solid pl-10 bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-800 hover:from-indigo-400 via-indigo-500 to-blue-800 transition ease-in duration-700 ">       
          <form   action="busqueda">
              <br>
                         <input type="text" class="w-4/5 transition ease-in duration-700 hover:bg-indigo-200 text-center text-white placeholder-white  bg-blue-200 rounded-full border-solid" placeholder="BUSCAR..." name="searchbar"  >

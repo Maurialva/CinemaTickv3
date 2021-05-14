@@ -15,21 +15,21 @@ import { svg_element } from 'svelte/internal';
     </script>
 
 
-<header class="w-full bg-gradient-to-r border-b-8 border-opacity-50 border-blue-200 border-solid from-blue-400 via-blue-500 to-indigo-800   transition ease-in duration-700 md:bg-gradient-to-r " >
-    <div class="flex flex-wrap justify-center">
-        <div class="w-1/2  sm:mr-20 md:w-1/3  md:mr-20 lg:w-1/4 2xl:w-1/6 2 my-5 2xl:mr-40 drop-shadow">
+<header class="w-screen bg-gradient-to-r border-b-8 border-opacity-50 border-blue-200 border-solid from-blue-400 via-blue-500 to-indigo-800   transition ease-in duration-700 md:bg-gradient-to-r " >
+    <div class="flex  ">
+        <div class="w-full sm:w-1/2 py-6  sm:mr-20 md:w-1/3  md:mr-20 lg:w-1/4 2xl:w-1/6 2 my-5 2xl:mr-40 drop-shadow">
             <img id="img" class="w-4/5" src='logocinematickv12.png' alt="logo" >
         </div>
-        <div class="w-4/6">
-            <h1 class="p-5 text-blue-600 text-xl md:text-3xl uppercase my-5">
+        <div class="w-screen  md:w-4/6 ">
+            <h1 class="py-7 text-blue-600 text-l md:text-xl xl:text-2xl uppercase my-6 ">
               <Searchconteiner/>                
             </h1>
         </div>
-        <div class="w-1/6 flex justify-end absolute text-blue-400 top-20 right-3 hover:-translate-y-1 hover:scale-110">
+        <div class="w-1/6  flex justify-end absolute text-blue-400 top-20 right-3 hover:-translate-y-1 hover:scale-110">
           
-            <div><a class="py-2  text-blue-200 fill-current "href="https://www.instagram.com/explore/tags/jamon/"> <img src="/instagram2.png" alt="instagram"></a>&nbsp;
-            </div> <div><a class="py-2" href="https://www.facebook.com/groups/jamonserrano"> <img src="/facebook2.png" alt="facebook"></a>&nbsp;
-          </div><div><a class="py-2" href="https://twitter.com/search?q=%23jamon&src=typed_query"> <img src="twitter2.png" alt="twitter"></a>&nbsp;
+            <div><a class="py-2 hidden 2xl:block text-blue-200 fill-current "href="https://www.instagram.com/explore/tags/jamon/"> <img src="/instagram2.png" alt="instagram"></a>&nbsp;
+            </div> <div><a class="py-2 hidden 2xl:block" href="https://www.facebook.com/groups/jamonserrano"> <img src="/facebook2.png" alt="facebook"></a>&nbsp;
+          </div><div><a class="py-2 hidden 2xl:block" href="https://twitter.com/search?q=%23jamon&src=typed_query"> <img src="twitter2.png" alt="twitter"></a>&nbsp;
         </div>
         <div>
 
