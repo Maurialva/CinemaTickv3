@@ -18,7 +18,7 @@ import H1c from '../components/H1c.svelte';
 	<div class="grid md:grid-cols-12 gap-5 p-4 m-2">
 	  <main class="md:col-span-9 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl ">
 		<H1c text="Cartelera" />
-		<Cartelera/></main>
+		<Cartelera movie="p_sample.jpg"/></main>
 	  <aside class="md:col-span-3 md:pt-0 p-2 border-8 align-center border-opacity-50 border-indigo-200 border-solid rounded-xl ">
 		<H1c text="suscribite" />
 		<Customtextinput name=Suscribirse texto="EMAIL..."/> 
@@ -58,7 +58,7 @@ import H1c from '../components/H1c.svelte';
 	</main>
 	  <aside class="p-2 border-8 align-center border-opacity-50 border-indigo-200 border-solid rounded-xl ">
 		<H1c text="Cartelera" />
-		<Cartelera/>
+		<Cartelera movie="p_samplesmall.jpg"/>
 	 </aside>
 	</div>
   </section>
