@@ -6,14 +6,14 @@ import Customfooter from '../components/Customfooter.svelte';
 
 /*	export let segment;*/
 </script>
-<container>
+
+
+
+
+<body class="bg-gray-100"><container>
 	<Customhead/>
 </container>
-
-
-
-<body>
-<main class="block">
+<main class="block ">
 	<section class="w-full justify-center block">
 		<slot></slot>
 	</section>

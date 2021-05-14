@@ -17,11 +17,11 @@ import { svg_element } from 'svelte/internal';
 
 <header class="w-full bg-gradient-to-r border-b-8 border-opacity-50 border-blue-200 border-solid from-blue-400 via-blue-500 to-indigo-800   transition ease-in duration-700 md:bg-gradient-to-r " >
     <div class="flex flex-wrap justify-center">
-        <div class="w-1/6  my-5 mr-40 drop-shadow">
+        <div class="w-1/2  sm:mr-20 md:w-1/3  md:mr-20 lg:w-1/4 2xl:w-1/6 2 my-5 2xl:mr-40 drop-shadow">
             <img id="img" class="w-4/5" src='logocinematickv12.png' alt="logo" >
         </div>
         <div class="w-4/6">
-            <h1 class="p-5 text-blue-600 text-3xl uppercase my-5">
+            <h1 class="p-5 text-blue-600 text-xl md:text-3xl uppercase my-5">
               <Searchconteiner/>                
             </h1>
         </div>
@@ -33,7 +33,7 @@ import { svg_element } from 'svelte/internal';
         </div>
         <div>
 
-          <button class="py-4 hover:-translate-y-1  align-middle transition ease-in duration-400  hover:scale-110 bg-blue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xl px-10 rounded-full shadow  hover:bg-indigo-600 hover:text-blue-200 outline-none focus:outline-none mr-1 mb-1 " type="button">
+          <button class="hidden lg:block py-4 hover:-translate-y-1  align-middle transition ease-in duration-400  hover:scale-110 bg-blue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xl px-10 rounded-full shadow  hover:bg-indigo-600 hover:text-blue-200 outline-none focus:outline-none mr-1 mb-1 " type="button">
             LOGIN
           </button></div>
         </div>

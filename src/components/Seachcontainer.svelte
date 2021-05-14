@@ -9,7 +9,7 @@ import Dropbutton from './Dropbutton.svelte';
          <form   action="busqueda">
              <br>
                         <input type="text" class="w-4/5 transition ease-in duration-700 hover:bg-indigo-200 text-center text-white placeholder-white  bg-blue-200 rounded-full border-solid" placeholder="BUSCAR..." name="searchbar"  >
-                         <div class="text-right float-right right-10 pb-8 scale-125 mr-14 -mt-4">
+                         <div class="text-right float-right 2xl:right-10 pb-8 scale-125 2xl:mr-14 2xl:-mt-4 -mt-4 hidden lg:block ">
                           <Searchicon/>
                        </div>
                  <br><br>   

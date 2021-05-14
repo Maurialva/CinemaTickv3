@@ -22,6 +22,7 @@ module.exports = {
       backgroundImage: theme => ({
 
         'bggray': "https://i.ibb.co/b2VvvCh/background.jpg",
+        borderRadius: ['hover', 'focus'],
     })
   },
   plugins: [],
