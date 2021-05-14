@@ -10,7 +10,7 @@ import Customfooter from '../components/Customfooter.svelte';
 
 
 
-<body class="bg-gray-100"><container>
+<body class="bg-gray-200"><container>
 	<Customhead/>
 </container>
 <main class="block ">
