@@ -34,14 +34,14 @@ import H1c from '../components/H1c.svelte';
 		</div>
 		
 		<H1c text="destacada" />
-		<Customfigure figname="titulo" cl="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white"/>
+		<Customfigure movie="p_sample.jpg" figname="titulo" cl="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white"/>
 		
 	 </aside>
 	</div>
 </section>
 
 
-<section class="block md:hidden w-full  mx-auto bg-gray-100 ">
+<section class="block md:hidden w-full  mx-auto bg-gray-200 ">
 	<div class="grid md:grid-cols-12 gap-5 p-4 m-2">
 	  <main class="md:col-span-9 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl ">
 		<H1c text="suscribite" />
@@ -54,7 +54,7 @@ import H1c from '../components/H1c.svelte';
 		</center>
 		
 		<H1c text="destacada" />
-		<Customfigure figname="titulo" cl="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white"/>
+		<Customfigure movie="p_sample.jpg" figname="titulo" cl="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white"/>
 	</main>
 	  <aside class="p-2 border-8 align-center border-opacity-50 border-indigo-200 border-solid rounded-xl ">
 		<H1c text="Cartelera" />
