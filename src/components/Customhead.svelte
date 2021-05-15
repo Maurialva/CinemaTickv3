@@ -43,7 +43,7 @@ import H1c from './H1c.svelte';
 
     </div>
 <div class="align-right block xl:hidden bottom-0 right-0">
-  <h1 class=" uppercase text-center text-ll text-indigo-600 md:text-3xl">
+  <h1 class=" uppercase text-center text-ll text-indigo-800 md:text-3xl">
   <a class="hover:text-blue-600" href="about">Instagram&nbsp;</a>
   <a  class="hover:text-blue-600" href="help">Facebook&nbsp;</a>
   <a class="hover:text-blue-600"  href="contact">Twitter&nbsp;</a>
