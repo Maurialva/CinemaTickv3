@@ -5,6 +5,7 @@
 <script>
 	import { slide } from 'svelte/transition';
     import CustomButton from '../components/CustomButton.svelte';
+import H1c from '../components/H1c.svelte';
 	let visible = true;
 	let sections = [
 		{
@@ -45,24 +46,27 @@
 </script>
 
 
-<h1>preguntas frecuentes </h1>
+<H1c text="preguntas frecuentes " />
 <hr style="color: #449fad; width: 100%;">
-{#each sections as section}
-<div class="accordion">
-        <CustomButton class="ayuda" on:click={() => expand(section)} >
-            {section.title}
-        </CustomButton>
+<center>
+	{#each sections as section}
+	<div class="accordion">
+		<CustomButton class="ayuda" on:click={() => expand(section)} >
+			{section.title}
+		</CustomButton>
 	{#if section.active}
 		<div class="slider" transition:slide>
 			<h2>
 				Respuesta:
 			</h2>
-            <h3>
+			<h3>
 			<p><br>{section.content}<br><br><br></p></h3>
 		</div>
 	{/if}
-</div>
-{/each}
+	</div>
+	{/each}
+</center>
+
 
 <style>
 	.accordion {
@@ -71,9 +75,9 @@
 	}
 	.slider {
 	
-		background-color: #449fad;
+		background-color: #818CF8;
 		color: white;
-        border-radius: 50px;
+        
 	}
 
     h3

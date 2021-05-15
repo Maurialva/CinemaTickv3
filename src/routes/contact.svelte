@@ -1,7 +1,9 @@
 <script>
     import Customtextinput from '../components/Customtextinput.svelte';
     import CustomButton from '../components/CustomButton.svelte';
-    
+import H1c from '../components/H1c.svelte';
+import Hrcustom from '../components/Hrcustom.svelte';
+
     function clickbutton() {
         
     }	
@@ -14,29 +16,30 @@
     <tbody>
     <tr>
         <td > 
-            <h1>contactarse con nosotros </h1>
-            <hr style="color: #449fad; width: 100%;">
+           <H1c text="contactarse con nosotros " />
+           <Hrcustom/>
+           <img class="mx-auto w-1/2 md:w-3/4" src="logocinematickv2.png" alt="Logo">
         </td>
     </tr>
     <tr rowspan="2">
         <td > 
-                <Customtextinput texto="NOMBRE Y APELLIDO" txnom="c_nombre"/>
+                <Customtextinput texto="NOMBRE Y APELLIDO" txnom="c_nombre"/><br>
         </td>
     </tr>
     <tr rowspan="2">
         <td > 
-                <Customtextinput texto="EMAIL" txnom="c_email"/>
+                <Customtextinput texto="EMAIL" txnom="c_email"/><br>
         </td>
     </tr>
     <tr rowspan="2">
         <td > 
-                <Customtextinput texto="ASUNTO DEL MENSAJE" txnom="c_asunto"/>
+                <Customtextinput texto="ASUNTO DEL MENSAJE" txnom="c_asunto"/><br>
         </td>
     </tr>
     <tr rowspan="7">
         <td > 
             <h3>
-            <textarea  > MENSAJE </textarea>
+            <textarea placeholder="&nbsp; &nbsp; &nbsp; MENSAJE..." class="uppercase bg-indigo-300 text-white w-full h-200 row-span-6 placeholder-white "  ></textarea><br><br>
             </h3>
         </td>
     </tr>
@@ -44,7 +47,7 @@
         <td > 
             <CustomButton class="enter" on:click={()=>clickbutton()} >
                 ENVIAR MENSAJE
-            </CustomButton>
+            </CustomButton><br><br>
         </td>
     </tr>
     </tbody>
@@ -56,12 +59,10 @@ table
     text-align: center;
 }
 
-textarea 
-{ 
-    width: 100%; 
-   
-    color: white;  
-    background-color: #449fad; 
-    border-radius: 10px; 
-}
+	textarea { width: 100%; height: 200px; }
+
 </style>
+
+
+
+  

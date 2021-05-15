@@ -1,1 +1,1 @@
-<hr class="w-full text-4xl font-bold border-solid border-2 border-indigo-500 text-indigo-600 "><br>
+<hr class=" text-center text-4xl font-bold border-solid border-2 border-indigo-200 text-indigo-200 "><br>
