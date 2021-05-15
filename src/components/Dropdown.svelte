@@ -20,7 +20,7 @@
    
    #dropdown  {
  
-  width: 50%;
+  width: 100%;
 }
 
 #dropdown-content {
@@ -30,6 +30,7 @@
   min-width: 30%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  content: center;
 }
 
 #dropdown-content a {

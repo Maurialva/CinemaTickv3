@@ -44,9 +44,14 @@ import H1c from '../components/H1c.svelte';
 		})
 	}
 </script>
+<div class="min-h-screen py-2  ">
 
+
+<div class="space-y-8">
+<br><br>
 
 <H1c text="preguntas frecuentes " />
+
 <hr style="color: #449fad; width: 100%;">
 <center>
 	{#each sections as section}
@@ -65,8 +70,8 @@ import H1c from '../components/H1c.svelte';
 	{/if}
 	</div>
 	{/each}
-</center>
-
+</center></div>
+</div>
 
 <style>
 	.accordion {

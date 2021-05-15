@@ -11,12 +11,18 @@ import Hrcustom from '../components/Hrcustom.svelte';
 <svelte:head>
 	<title>CinemaTick - Contactarse</title>
 </svelte:head>
+
+<div class="min-h-screen py-2  ">
+
+
+    <div class="space-y-8">
+    <br>
 <center>
 <table>
     <tbody>
     <tr>
         <td > 
-           <H1c text="contactarse con nosotros " />
+           <H1c text="contactarse con nosotros " /><br>
            <Hrcustom/>
            <img class="mx-auto w-1/2 md:w-3/4" src="logocinematickv2.png" alt="Logo">
         </td>
@@ -52,8 +58,8 @@ import Hrcustom from '../components/Hrcustom.svelte';
     </tr>
     </tbody>
 </table>
-</center>
-<style>
+</center> </div></div>
+<style> 
 table
 {
     text-align: center;

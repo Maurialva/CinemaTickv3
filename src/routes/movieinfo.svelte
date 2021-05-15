@@ -100,44 +100,6 @@ function clickbutton(n)
     </div> 
    
 </div>
-      
-       <!--   <div id="title">
-                <br>
-              
-            </div>
-            <div class="w-1/3 pl-20 flex flex-wrap " id="poster">
-                <img src="./p_mortalk.jpg" alt="poster">
-            </div>
-            <div class="flex flex-wrap"><br>
-                <Dropdown nombre="CINE"/> <br> <br>
-                <Dropdown nombre="FUNCION"/><br><br>
-                <CustomButton id="suscripcion" on:click={()=>clickbutton("1")}>
-                    SELECCIONAR BUTACAS
-                </CustomButton><br><br>
-                <h2>
-                COSTO DE ENTRADA:</h2><h3> $999.99 </h3><h2>COSTO*CANT<br></h2><h3> $999.99 </h3>
-                <h2>
-                    GENERO:</h2><h3> ACCION - FANTASIA - CIENCIA FICCION </h3>
-                    <br>
-                    <button class="md:text-sm lg:text-sm text-base w-1/2   justify-items-center py-2 align-center transition ease-in duration-400  hover:scale-110 bg-blue-500 text-white active:bg-lightBlue-600 font-bold uppercase  px-10 rounded-full hover:bg-indigo-600 hover:text-blue-200 outline-none focus:outline-none " on:click="{() => showModal = true}">
-                          
-                    VER TRAILER    
-                    </button>
-                    <br><br>
-            </div>
-            <div id="descrip">
-                <h3 class="uppercase  text-justify mr-12">  Mortal Kombat es una película de fantasía oscura de artes marciales y gore estadounidense de 2021 dirigida por Simon McQuoid, en su debut como director, a partir de un guion de Greg Russo y Dave Callaham y una historia de Oren Uziel y Russo.3​ Se basa en la franquicia de videojuegos del mismo nombre creada por Ed Boon y John Tobias, que sirve como reinicio de la serie de películas Mortal Kombat. La película está protagonizada por Lewis Tan, Jessica McNamee, Josh Lawson, Tadanobu Asano, Mehcad Brooks, Ludi Lin, Chin Han, Joe Taslim e Hiroyuki Sanada. 
-        </h3> </div>
-            <div id="pay">
-                <br>
-    
-                <CustomButton id="suscripcion" on:click={()=>clickbutton("2")}>
-                    PROCEDER A PAGAR
-                </CustomButton> <br><br>
-            </div>-->  
-    
-    
-    
 
 
 {#if showModal}
