@@ -43,10 +43,10 @@ import H1c from './H1c.svelte';
 
     </div>
 <div class="align-right block xl:hidden bottom-0 right-0">
-  <h1 class=" uppercase text-center text-ll text-blue-400 md:text-3xl">
-  <a class="hover:text-indigo-600" href="about">Instagram&nbsp;</a>
-  <a  class="hover:text-indigo-600" href="help">Facebook&nbsp;</a>
-  <a class="hover:text-indigo-600"  href="contact">Twitter&nbsp;</a>
+  <h1 class=" uppercase text-center text-ll text-indigo-600 md:text-3xl">
+  <a class="hover:text-blue-600" href="about">Instagram&nbsp;</a>
+  <a  class="hover:text-blue-600" href="help">Facebook&nbsp;</a>
+  <a class="hover:text-blue-600"  href="contact">Twitter&nbsp;</a>
     
   <button class=" lg:hidden hover:-translate-y-1  align-middle transition ease-in duration-400  hover:scale-110 bg-blue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xl px-10 rounded-full shadow  hover:bg-indigo-600 hover:text-blue-200 outline-none focus:outline-none mr-1 mb-1 " type="button" on:click="{()=> clickbutton()}">
     LOGIN

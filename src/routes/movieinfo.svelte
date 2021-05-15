@@ -2,6 +2,11 @@
 import Dropdown from '../components/Dropdown.svelte';
 import CustomButton from '../components/CustomButton.svelte';
 import { goto } from '@sapper/app';
+import H1c from '../components/H1c.svelte';
+import Custommodal from '../components/Custommodal.svelte';
+
+
+let showModal = false;
 function clickbutton(n) 
 {
   
@@ -22,7 +27,7 @@ function clickbutton(n)
     <div id="grid-container2">
         <div id="title">
             <br>
-            <h1>Titulo de la pelicula</h1>
+           <H1c text="Titulo de la pelicula" /> <br>
         </div>
         <div id="poster">
             <img src="./p_mortalk.jpg" alt="poster">
@@ -38,10 +43,13 @@ function clickbutton(n)
             <h2>
                 GENERO:</h2><h3> ACCION - FANTASIA - CIENCIA FICCION </h3>
 
+                <button on:click="{() => showModal = true}">
+                    show modal
+                </button>
         </div>
         <div id="descrip">
-        <h2>   Mortal Kombat es una película de fantasía oscura de artes marciales y gore estadounidense de 2021 dirigida por Simon McQuoid, en su debut como director, a partir de un guion de Greg Russo y Dave Callaham y una historia de Oren Uziel y Russo.3​ Se basa en la franquicia de videojuegos del mismo nombre creada por Ed Boon y John Tobias, que sirve como reinicio de la serie de películas Mortal Kombat. La película está protagonizada por Lewis Tan, Jessica McNamee, Josh Lawson, Tadanobu Asano, Mehcad Brooks, Ludi Lin, Chin Han, Joe Taslim e Hiroyuki Sanada. 
-    </h2> </div>
+            <h3 class="uppercase  text-justify mr-12">  Mortal Kombat es una película de fantasía oscura de artes marciales y gore estadounidense de 2021 dirigida por Simon McQuoid, en su debut como director, a partir de un guion de Greg Russo y Dave Callaham y una historia de Oren Uziel y Russo.3​ Se basa en la franquicia de videojuegos del mismo nombre creada por Ed Boon y John Tobias, que sirve como reinicio de la serie de películas Mortal Kombat. La película está protagonizada por Lewis Tan, Jessica McNamee, Josh Lawson, Tadanobu Asano, Mehcad Brooks, Ludi Lin, Chin Han, Joe Taslim e Hiroyuki Sanada. 
+    </h3> </div>
         <div id="pay">
             <br>
 
@@ -82,3 +90,13 @@ function clickbutton(n)
 
 
 </style>
+
+
+
+
+
+{#if showModal}
+	<Custommodal on:close="{() => showModal = false}">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2O4RCdwCGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</Custommodal>
+{/if}
