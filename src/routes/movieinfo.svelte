@@ -12,7 +12,7 @@ function clickbutton(n)
   
     switch(n)
     {
-        case "1":  goto('register');break;
+        case "1":  goto('seatssel');break;
         case "2": goto('compra');break;
         }
    
