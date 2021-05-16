@@ -25,18 +25,10 @@
     }
     
 </script>
-<a  href={dir}> <img  class= "socialicon"  src={scr} alt={nombre} height="" width="4%" border-align=top ></a>
+<a class="w-full" href={dir}> <img  id= "socialicon"  src={scr} alt={nombre}></a>
 
 <style>
-   
-    a:hover
-    {
-       
-       border-radius: 50px;
-       border:3px solid lightgray;      
-      
-    }
-
+  
 
 </style>
 

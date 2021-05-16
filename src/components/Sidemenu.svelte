@@ -6,6 +6,7 @@
 	import { slide } from 'svelte/transition';
     import CustomButton from '../components/CustomButton.svelte';
     import { goto } from '@sapper/app';
+	import H1c from './H1c.svelte';
     function clickbutton()
   {
     goto("busqueda");
@@ -15,19 +16,16 @@
 		{
 			id: 1,
 			title: "Cines",
-			content:  "Si el titular de datos personales utiliza los servicios de CinemaTick, en consecuencia presta su consentimiento, conforme a lo establecido en la ley 25.326 de Protección de Datos Personales, a tenor de lo cual declara conocer y aceptar, para que sus datos personales integren la base de datos de CinemaTick, otorgando por la presente autorización expresa para: (i) el tratamiento automatizado de dichos datos e información y (ii) su utilización para servicios actuales o futuros, que desarrolle SA.El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuitaWelcome to section 2 test content",
 			active: false,
 		},
 		{
 			id: 2,
 			title: "Generos",
-			content: "Si el titular de datos personales utiliza los servicios de CinemaTick, en consecuencia presta su consentimiento, conforme a lo establecido en la ley 25.326 de Protección de Datos Personales, a tenor de lo cual declara conocer y aceptar, para que sus datos personales integren la base de datos de CinemaTick, otorgando por la presente autorización expresa para: (i) el tratamiento automatizado de dichos datos e información y (ii) su utilización para servicios actuales o futuros, que desarrolle SA.El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuitaWelcome to section 2 test content",
 			active: false,
 		},
 		{
 			id: 3,
 			title: "Horario",
-			content:  "Si el titular de datos personales utiliza los servicios de CinemaTick, en consecuencia presta su consentimiento, conforme a lo establecido en la ley 25.326 de Protección de Datos Personales, a tenor de lo cual declara conocer y aceptar, para que sus datos personales integren la base de datos de CinemaTick, otorgando por la presente autorización expresa para: (i) el tratamiento automatizado de dichos datos e información y (ii) su utilización para servicios actuales o futuros, que desarrolle SA.El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuitaWelcome to section 2 test content",
 			active: false,
 		}
 	]
@@ -46,47 +44,28 @@
 
 
 </script>
-<h1> Seleccionar filtro </h1>
-<hr style="color: #449fad; width: 100%;">
+
+<H1c text="seleccionar filtro" />
 {#each sections as section}
-<div class="accordion">
-        <CustomButton class="ayuda" on:click={() => expand(section)} >
+<div id="accordion">
+        <CustomButton id="ayuda" on:click={() => expand(section)} >
             {section.title}
-        </CustomButton>
+        </CustomButton><br><br>
 	{#if section.active}
-		<div class="slider" transition:slide>
+		<div id="slider" transition:slide>
             <h3>
-			<p><br><CustomButton class="dropdown" on:click={()=>clickbutton()} >
+			<p><CustomButton id="dropdown" on:click={()=>clickbutton()} >
         Opcion 1
-    </CustomButton>
-    <CustomButton class="dropdown" on:click={()=>clickbutton()} >
+    </CustomButton> 
+    <CustomButton id="dropdown" on:click={()=>clickbutton()} >
       Opcion 2
   </CustomButton>
-  <CustomButton class="dropdown" on:click={()=>clickbutton()} >
+  <CustomButton id="dropdown" on:click={()=>clickbutton()} >
     Opcion 3
 </CustomButton>
         
-    <br><br><br></p></h3>
+    <br><br></p></h3>
 		</div>
 	{/if}
 </div>
 {/each}
-
-<style>
-	.accordion {
-		margin-bottom: 1%;
-       
-	}
-	.slider {
-	
-		background-color: #449fad;
-		color: white;
-        border-radius: 50px;
-	}
-
-    h3
-    {
-        color: white;
-    }
-</style>
-

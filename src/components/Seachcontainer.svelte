@@ -1,44 +1,17 @@
 <script>
     import Searchicon from '../components/Searchicon.svelte';
+import Dropbutton from './Dropbutton.svelte';
+    
     </script>
     
-    <br>
-                        <form action="busqueda">
-                            
-                        <input type="text" placeholder="BUSCAR..." name="searchbar"  >
-                        <Searchicon/>
-                        
-                        <br>
-                        <br>
-                        </form>
     
-        <style>
-        
-        input[type=text] 
-        {
-            vertical-align:middle;
-            text-align: center;
-            transition: background 900ms ease-in-out;
-            background-color: rgb(255, 255, 255);
-            background-position: 100%;
-            background-size: 200%;
-            border: rgb(255, 255, 255);
-            background-image: linear-gradient(90deg,rgb(255, 255, 255) 0%, rgb(21, 70, 75) 56%, rgb(17, 28, 70) 100%);		
-            color: rgb(255, 255, 255); 
-            border-radius: 50px; 
-            width:80%;
-            font-size: 120%;
-            }
-        
-        input:focus {  border-image: #000000; 
-        outline: none;
-        background-position: 0;
-        transition: background 900ms ease-in-out;
-        background-image: linear-gradient(43deg,rgb(27, 32, 83) 0%, rgb(33, 214, 199) 56%, rgb(4, 25, 39) 100%); 
-        }
-        input:hover{
-            background-position: 0;
-            transition: background 900ms ease-in-out;
-            background-image:  linear-gradient(43deg,rgb(27, 32, 83) 0%, rgb(33, 214, 199) 56%, rgb(4, 25, 39) 100%); 
-        }
-    </style>
+    <div class="w-full sm:w-9/12 rounded-full border-solid pl-10 bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-800 hover:from-indigo-400 via-indigo-500 to-blue-800 transition ease-in duration-700 ">       
+         <form   action="busqueda">
+             <br>
+                        <input type="text" class="w-4/5 transition ease-in duration-700 hover:bg-indigo-200 text-center text-white placeholder-white  bg-blue-200 rounded-full border-solid" placeholder="BUSCAR..." value="" name="searchbar"  >
+                         <div class="text-right float-right 2xl:right-10 pb-8 scale-125 2xl:mr-14 2xl:-mt-4 -mt-4 hidden lg:block ">
+                          <Searchicon/>
+                       </div>
+                 <br><br>   
+         </form>
+    </div>  

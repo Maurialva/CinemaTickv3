@@ -1,70 +1,53 @@
 <script>
     import Customfigure from '../components/Customfigure.svelte';
+    export let movie;
 </script>
-
-<grid> 
-
-<div class="grid-container2">
-	<div class="title">
-		<h1>Cartelera</h1>
-	</div>
-    <div class="movie1">
-        <Customfigure figname="TITULO"/>
-    </div>
-    <div class="movie2">
-        <Customfigure figname="TITULO"/>
-    </div>
-    <div class="movie3">
-        <Customfigure figname="TITULO"/>
-    </div>
-    <div class="movie4">
-        <Customfigure figname="TITULO"/>
-    </div>
-    <div class="movie5">
-        <Customfigure figname="TITULO"/>
-    </div>
-    <div class="movie6">
-        <Customfigure figname="TITULO"/>
-    </div>
-    <div class="movie7">
-        <Customfigure figname="TITULO"/>
-    </div>
-    <div class="movie8">
-        <Customfigure figname="TITULO"/>
-    </div>
-    <div class="movie9">
-        <Customfigure figname="TITULO"/>
-    </div>
-</div>
-</grid>
-<style>
- .title{ grid-area: m0; }
-  .movie1 { grid-area: m1; }
-  .movie2 { grid-area: m2; }
-  .movie3 { grid-area: m3; }
-  .movie4 { grid-area: m4; }
-  .movie5 { grid-area: m5; }
-  .movie6 { grid-area: m6; }
-  .movie7 { grid-area: m7; }
-  .movie8 { grid-area: m8; }
-  .movie9 { grid-area: m9; }
-  
-  .grid-container2 {
-    display: grid;
-    grid-template-areas:
-      'm0 m0 m0'  
-      'm1 m2 m3'
-      'm4 m5 m6'
-      'm7 m8 m9';
-  }
-  
-  .grid-container2 > div {
-      background-color:none;
-    text-align: center;
-    padding: none;
-    border-radius: 50px; 
-    border:none;
-    
-  }
-
-</style>
+<!--
+<div class="grid grid-cols-3 gap-3 ">
+<div class="col-span-3">
+    <h1 class=" uppercase text-center text-4xl text-blue-400">
+    Cartelera<br>
+ </h1></div>
+<div class="border-indigo-400 border-solid border-3 "><Customfigure  figname="Titulo" cl="border-indigo-400 border-solid border-3 transform hover:scale-120"/></div>
+<div><Customfigure figname="Titulo" /></div>
+<div><Customfigure  figname="Titulo"/></div>
+<div><Customfigure  figname="Titulo"/></div>
+<div><Customfigure  figname="Titulo"/></div>
+<div><Customfigure  figname="Titulo"/></div>
+<div><Customfigure figname="Titulo"/></div>
+<div><Customfigure figname="Titulo"/></div>
+<div><Customfigure figname="Titulo"/></div>
+<br>
+</div> -->
+<div class="container mx-auto px-4">             
+    <section class="py-2 px-2">
+      <div class="flex flex-wrap  -mx-4">
+        <div class="  md:block md:w-1/3 px-4">
+          <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white " ><Customfigure movie={movie} figname="titulo" cl=""/></div>
+        </div>
+        <div class="  md:block md:w-1/3 px-4">
+            <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white "  ><Customfigure movie={movie}/></div>
+          </div>
+          <div class="  md:block md:w-1/3 px-4">
+            <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white " ><Customfigure movie={movie}/></div>
+          </div>
+          <div class="  md:block md:w-1/3 px-4">
+            <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white "  ><Customfigure movie={movie}/></div>
+          </div>
+          <div class="  md:block md:w-1/3 px-4">
+              <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white " ><Customfigure movie={movie}/></div>
+            </div>
+            <div class="  md:block md:w-1/3 px-4">
+              <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white " ><Customfigure movie={movie}/></div>
+            </div>
+            <div class="  md:block md:w-1/3 px-4">
+                <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white " ><Customfigure movie={movie}/></div>
+              </div>
+              <div class="  md:block md:w-1/3 px-4">
+                  <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white " ><Customfigure movie={movie}/></div>
+                </div>
+                <div class="  md:block md:w-1/3 px-4">
+                  <div class="h-full w-full bg-cover  shadow-md  transform hover:bg-blue-400 border-8 border-opacity-50 border-indigo-200 border-solid rounded-xl hover:text-white " ><Customfigure movie={movie}/></div>
+                </div>
+    </section>
+  </div>

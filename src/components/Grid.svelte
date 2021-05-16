@@ -8,29 +8,15 @@
         <style>
         
          
-        .menuleft { grid-area: menu; }
-        .menucenter { grid-area: main; }
-        .menuright { grid-area: right; }
+        #menuleft { grid-area: menu; }
+        #menucenter { grid-area: main; }
+        #menuright { grid-area: right; }
    
         
-        .grid-container {
+        #grid-container {
           display: grid;
           grid-template-areas:
             'menu menu menu menu menu main';
-            grid-gap: 1%;
-          background-color:#449fad;
-          padding: 1%;
-          border-radius: 50px; 
-        }
-        
-        .grid-container > div {
-          background-color:lightgray;
-          text-align: center;
-          padding: 1%;
-          border-radius: 50px; 
-          border-color: aqua;
-          
-          
         }
         </style>
     
@@ -38,12 +24,12 @@
     
     <style>
         
-        .menuleft { grid-area: menu; }
-        .menucenter { grid-area: main; }
-        .menuright { grid-area: right; }
+        #menuleft { grid-area: menu; }
+        #menucenter { grid-area: main; }
+        #menuright { grid-area: right; }
    
         
-        .grid-container {
+        #grid-container {
           display: grid;
           grid-template-areas:
             'menu menu main main main main';
@@ -53,7 +39,7 @@
           border-radius: 50px; 
         }
         
-        .grid-container > div {
+        #grid-container > div {
           background-color:lightgray;
           text-align: center;
           padding: 1%;
@@ -66,18 +52,18 @@
  
 {:else if pagenumber=="9"}
 <style>
-  .title{ grid-area: m0; }
-  .movie1 { grid-area: m1; }
-  .movie2 { grid-area: m2; }
-  .movie3 { grid-area: m3; }
-  .movie4 { grid-area: m4; }
-  .movie5 { grid-area: m5; }
-  .movie6 { grid-area: m6; }
-  .movie7 { grid-area: m7; }
-  .movie8 { grid-area: m8; }
-  .movie9 { grid-area: m9; }
+  #title{ grid-area: m0; }
+  #movie1 { grid-area: m1; }
+  #movie2 { grid-area: m2; }
+  #movie3 { grid-area: m3; }
+  #movie4 { grid-area: m4; }
+  #movie5 { grid-area: m5; }
+  #movie6 { grid-area: m6; }
+  #movie7 { grid-area: m7; }
+  #movie8 { grid-area: m8; }
+  #movie9 { grid-area: m9; }
   
-  .grid-container {
+  #grid-container {
     display: grid;
     grid-template-areas:
       'm0 m0 m0'  
@@ -86,7 +72,7 @@
       'm7 m8 m9';
   }
   
-  .grid-container > div {
+  #grid-container > div {
       background-color:none;
     text-align: center;
     padding: none;
@@ -108,12 +94,12 @@
   <style>
       
       
-      .menuleft { grid-area: menu; }
-      .menucenter { grid-area: main; }
-      .menuright { grid-area: right; }
+      #menuleft { grid-area: menu; }
+      #menucenter { grid-area: main; }
+      #menuright { grid-area: right; }
 
       
-      .grid-container {
+      #grid-container {
         display: grid;
         grid-template-areas:
           'main main main main main main';
@@ -123,7 +109,7 @@
         border-radius: 50px; 
       }
       
-      .grid-container > div {
+      #grid-container > div {
         background-color:lightgray;
         text-align: center;
         padding: 1%;

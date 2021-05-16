@@ -1,34 +1,43 @@
 <script>
     import Customtextinput from '../components/Customtextinput.svelte';
     import CustomButton from '../components/CustomButton.svelte';
-    
+import H1c from '../components/H1c.svelte';
+import Dropdown from '../components/Dropdown.svelte';
+import Hrcustom from '../components/Hrcustom.svelte';
     function clickbutton() {
         
     }	
     </script>
-    <center>
+    <svelte:head>
+        <title>CinemaTick - Finalizar Compra</title>
+    </svelte:head>
+    
+        <div class="min-h-screen py-2">
+
+            <center>
         <table>
         <tbody>
             <tr>
                 <td colspan="2">
-                    <h3>Pelicula: TITULO </h3>
+                    <H1c text="Pelicula: TITULO"/>
+                    <br>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <h1>datos de compra </h1>
-                    <hr style="color: #449fad; width: 100%;">
+                    <h1>DATOS DE COMPRA </h1>
+                   <Hrcustom/>
                 </td>
             </tr>
             <tr>
                 <td >
-                    <h3>Cant. Butacas: 99 <br>
-                    Cine: Tanto</h3>
+                    <h3>CANT. DE BUTACAS: TANTO <br><br>
+                    CINE: TANTO</h3><br>
                     
                 </td>
                 <td >
-                    <h3>Precio: $999.00 <br>
-                    Funcion: Tanto</h3>
+                    <h3>PRECIO: $999.00 <br><br>
+                    FUNCION: TANTO</h3><br>
                     
                 </td>
             </tr>
@@ -39,7 +48,7 @@
                 <td> 
                     <Customtextinput texto="APELLIDO" txnom="r_apellido"/>
                 </td>
-            </tr>
+            </tr><br>
             <tr>
                 <td> 
                     <Customtextinput texto="TELEFONO" txnom="r_telefono"/>
@@ -47,7 +56,7 @@
                 <td> 
                     <Customtextinput texto="DIRECCION" txnom="r_direccion"/>
                 </td>
-            </tr>
+            </tr><br>
             <tr>
                 <td>
                     <Customtextinput texto="EMAIL" txnom="r_email"/>
@@ -55,34 +64,25 @@
                 <td>
                     <Customtextinput texto="DNI" txnom="p_dni"/>
                 </td>
-            </tr>
+            </tr><br>
             <tr>
                 <td colspan="2">
                     <Customtextinput texto="NUMERO DE TARJETA" txnom="p_ntarjeta"/>
                 </td>
-
-            </tr>
+<br>
+            </tr><br>
             <tr>
                 <td >
                     <Customtextinput texto="CLAVE DE SEGURIDAD" txnom="p_nseguridad"/>
                 </td>
                 <td>
                     
-                    <div class="dropdown">
-                   <CustomButton class="dropbtn" on:click={()=>clickbutton()} >
-                        CUOTAS
-                    </CustomButton>
-                    <div class="dropdown-content">
-                    <a href=".">1 cuota de tanto</a>
-                    <a href=".">3 cuotas de tanto</a>
-                    <a href=".">6 cuotas de tanto</a>
-                    </div>
-                    </div>
+                   <Dropdown nombre="CUOTAS"/>
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <CustomButton class="pago" on:click={()=>clickbutton()} >
+                <td colspan="2"><br>
+                    <CustomButton id="pago" on:click={()=>clickbutton()} >
                         EFECTUAR PAGO
                     </CustomButton>
                 </td>
@@ -93,7 +93,7 @@
         
     </center>
     
-    
+</div>
     <style>
         
 table
@@ -101,32 +101,6 @@ table
     text-align: center;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #0d494b70;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: rgb(255, 255, 255);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #1c5068}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 
 </style>

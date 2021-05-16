@@ -28,7 +28,7 @@
 </style>
 
 <svelte:head>
-	<title>{status}</title>
+	<title>CinemaTick - {status}</title>
 </svelte:head>
 
 <h1>{status}</h1>
